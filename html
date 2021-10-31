@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ilyas psyia5</title>
+  <LINK REL='stylesheet' TYPE='text/css' HREF='looks.css'>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div id="header">Coursework II</div>
 
+  <div id="search">
+    <h1>search for a moovie by title</h1>
+
+    <form action="searchmovie.php" onSubmit="return validate(this)">
+            moovie title:<br>
+            <input type="text" name="title">
+            <br><br>
+            <input type="submit" value="search">
+    </form>
+
+    <h1>search for an actor</h1>
+
+    <form action="searchactor.php" onSubmit="return validate(this)">
+            search actor name:<br>
+            <input type="text" name="actorname">
+            <br><br>
+            <input type="submit" value="search">
+    </form>
+  </div>
+
+  <div id="adddeleteactor" >
+    <h1>Add an actor</h1>
+
+    <form action="addactor.php" onSubmit="return validate(this)">
+            add actor name:<br>
+            <input type="text" name="addactor">
+            <br><br>
+            <input type="submit" value="add">
+    </form>
+
+    <h1>Delete an actor</h1>
+    <form action="deleteactor.php" onSubmit="return validate(this)">
+            delete actor name:<br>
+            <input type="text" name="deleteactor">
+            <br><br>
+            <input type="submit" value="delet">
+    </form>
+
+
+  </div>
+
+  <div id=adddeletemovie>
+    <h1>Add Movie</h1>
+    <form action="movieadd.php" onSubmit="return validate(this)">
+            Add Movie:<br>
+            <input type="text" name="addtitle">
+            <input type="text" name="HeadactorID">
+            <input type="text" name="moviegenre">
+            <input type="text" name="movieprice">
+            <input type="text" name="movieyear">
+            <br><br>
+            <input type="submit" value="Add">
+    </form>
+
+    <h1>Delete Movie</h1>
+    <form action="moviedelete.php" onSubmit="return validate(this)">
+            Delete Movie:<br>
+            <input type="text" name="moviedelete">
+            <br><br>
+            <input type="submit" value="delete">
+    </form>
+
+  </div>
+  <div id=footer></div>
+</body>
+</html>
